@@ -1,0 +1,12 @@
+<Alloy>
+	<Window class="container">
+		
+        <Label id="user" width="80%" top="20" height="50" />
+        <ListView id="chat">
+         <View id="login" >
+        	<Label class="loginHeader" id="header1" text="Please enter your user name:" />
+        	<TextField id="username" class="input" width="80%" top="200" height="20" hintText="JAseed" value=""/>
+        	<Button title="Login" top="300" width="200" height="50" onClick="SaveUser"/>
+        </View>
+	</Window>
+</Alloy>
