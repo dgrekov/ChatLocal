@@ -1,11 +1,17 @@
 <Alloy>
 	<Window class="container">
-		
+		<View>
+			<Label id="quote" text="“"/>
+			<Label id="chat" text="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.">
+			<Label id="username" text="Jason"/>
+		</View>
         <Label id="user" width="80%" top="20" height="50" />
-        <ListView id="chat">
-         <View id="login" >
+        "
+        
+      <!--  <ListView id="chat">-->
+         <View id="login"> 
         	<Label class="loginHeader" id="header1" text="Please enter your user name:" />
-        	<TextField id="username" class="input" width="80%" top="200" height="20" hintText="JAseed" value=""/>
+        	<TextField id="username" class="input" width="80%" top="200" height="20" hintText="Username" value=""/>
         	<Button title="Login" top="300" width="200" height="50" onClick="SaveUser"/>
         </View>
 	</Window>

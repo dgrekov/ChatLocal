@@ -5,7 +5,7 @@ function doClick(e) {
 function SaveUser(e){
 	Ti.App.Properties.setString('user', $.username.value);
 	$.login.hide();
-	$.user.setText("Hello, "+Ti.App.Properties.getString('user'));
+	$.user.setText(Ti.App.Properties.getString('user'));
 }
 
 
@@ -27,6 +27,6 @@ var vegDataSet = [
 vegSection.setItems(vegDataSet);
 sections.push(vegSection);
 
-$.chat.sections = sections;
+//$.chat.sections = sections;
 
 $.index.open();
