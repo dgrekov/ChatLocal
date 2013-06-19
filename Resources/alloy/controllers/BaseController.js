@@ -15,6 +15,7 @@ var Alloy = require('alloy'),
  */
 var Controller = function() {
 	var roots = [];
+	var self = this;
 
 	this.__iamalloy = true;
 	_.extend(this, Backbone.Events, {
@@ -104,6 +105,22 @@ var Controller = function() {
 				}
 			} else {
 				return this.getView();
+			}
+		},
+
+		createStyle: function(opts) {
+			return Alloy.createStyle(self.__widgetId ? {
+				widgetId: self.__widgetId,
+				name: self.__controllerPath
+			} : self.__controllerPath, opts);
+		},
+
+		UI: {
+			create: function(apiName, opts) {
+				return Alloy.UI.create(self.__widgetId ? {
+					widgetId: self.__widgetId,
+					name: self.__controllerPath
+				} : self.__controllerPath, apiName, opts);
 			}
 		}
 	});

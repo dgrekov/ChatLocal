@@ -1,41 +1,37 @@
 ".container": {
 	backgroundColor:"white"
 },
-"Label": {
-	width: Ti.UI.SIZE,
-	height: Ti.UI.SIZE,
-	color: "#acacac"
-} 
+
 "#quote": {
 	color: "#CC2A41",
 	textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT,
-	width: "10%",
+	width: "20",
 	left: "10",
 	top: "20",
 	font: {
-		fontSize: "70dp",
+		fontSize: "70",
 		fontFamily: "Bodoni 72"
 		}
 }
 "#chat": {
 	color: "#424254",
 	width: "80%",
-	top: "42",
+	top: "10",
 	left: "42",
 	textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT,
 	font: {
-		fontSize: "12dp",
+		fontSize: "12",
 		fontFamily: "HelveticaNeue"
 		}
 }
 "#username": {
 	color: "#351330",
 	right: "20",
-	top: "203",
+	bottom: "5",
 	width: Ti.UI.SIZE,
 	textAlign: Ti.UI.TEXT_ALIGNMENT_RIGHT,
 	font: {
-		fontSize: "16dp",
+		fontSize: "16",
 		fontFamily: "Bodoni 72"
 	}
 }

@@ -9,24 +9,4 @@ function SaveUser(e){
 }
 
 
-var sections = [];
-
-var fruitSection = Ti.UI.createListSection({ headerTitle: 'Jason'});
-var fruitDataSet = [
-    {properties: { title: 'Hey How Are you?'}},
-    {properties: { title: 'Hello?'}},
-];
-fruitSection.setItems(fruitDataSet);
-sections.push(fruitSection);
-
-var vegSection = Ti.UI.createListSection({ headerTitle: 'Dmitry'});
-var vegDataSet = [
-    {properties: { title: 'Oh Hey'}},
-    {properties: { title: 'Did not see you there'}},
-];
-vegSection.setItems(vegDataSet);
-sections.push(vegSection);
-
-//$.chat.sections = sections;
-
 $.index.open();

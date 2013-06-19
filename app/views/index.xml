@@ -1,14 +1,28 @@
 <Alloy>
 	<Window class="container">
-		<View>
-			<Label id="quote" text="“"/>
-			<Label id="chat" text="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.">
-			<Label id="username" text="Jason"/>
-		</View>
+		
         <Label id="user" width="80%" top="20" height="50" />
-        "
         
-      <!--  <ListView id="chat">-->
+        
+    	<ListView id="list" defaultItemTemplate="them">
+			<Templates>
+				<ItemTemplate name="them" id="chat_row" height="75">
+					<Label bindId="chat" id="chat">
+					<Label id="username" text="Jason"/>
+					<Label id="quote" text="“"/>
+				</ItemTemplate>
+				<ItemTemplate name="us" height="50">
+					<Label bindId="label" class="labels"/>
+				</ItemTemplate>
+			</Templates>
+
+			<ListSection>
+				<ListItem chat:text="this is some text"/>
+				<ListItem chat:text="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."/>
+				<ListItem chat:text="this is some text"/>
+				<ListItem chat:text="this is some text"/>
+			</ListSection>
+		</ListView>
          <View id="login"> 
         	<Label class="loginHeader" id="header1" text="Please enter your user name:" />
         	<TextField id="username" class="input" width="80%" top="200" height="20" hintText="Username" value=""/>
